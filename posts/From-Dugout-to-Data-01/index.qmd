@@ -1,0 +1,145 @@
+---
+title: "Learning R Through Baseball: Understanding Vectors One Hit at a Time"
+author: "Keith Karani"
+date: "2025-08-07"
+categories: [Baseball, R]
+image: "thumbnail.jpg"
+---
+
+I’m starting a series to teach R programming, data science & eventually machine learning using baseball concepts a sport I play and umpire passionately (me in the black bandanna)in the Nairobi Baseball Community Series, representing the Thika Rangers Baseball Club. In this year’s regular season, we finished last in the league standings but majority of our games were close calls. That experience made me realize that we need more than just talent and effort. We need insight. I believe that using data can help us understand what’s really happening on the field and improve our performance. This series will document my learning journey and show how R can be used to analyze and improve baseball performance, one concept at a time.
+
+![](field.jpg){fig-align="center"}
+
+This first article is all about **vectors**, which are like the batting lineup of R simple, powerful, and foundational to everything else.
+
+### **Batter Up!… what exactly is a vector in R?**
+
+In simple terms, a vector is a collection of values. Think of it like a list of player names, jersey numbers, or the number of runs each player scored in a game all arranged in a straight line. In R, almost everything starts with a vector. If you want to do any data analysis, chances are you’ll be working with vectors a lot.
+
+To create a vector in R, you use the `c()` function, which stands for "combine" or "concatenate".
+
+```{r}
+players <- c("Casper", "Moses", "Tuju", "Karani", "Steve")
+runs_scored <- c(2, 3, 2, 1, 4)
+
+```
+
+In this code: player is a variable name storing a character vector (a vector of names) representing player names of our teams’ game day roaster while runs_scored is a numeric vectors representing the runs scored.
+
+### **All elements must be the same type**
+
+One thing I learned early on, is that all elements in a vector have to be of the same type. That means you can’t mix numbers, text, and TRUE/FALSE values in one vector at least not without R trying to convert everything to one type. Let me show an example:
+
+```{r}
+mixed <- c(1, "Hit", TRUE)
+print(mixed)
+
+
+# [1] "1"   "Hit" "TRUE"
+
+```
+
+R turns everything into a character (text) because that’s the most flexible type. That can lead to weird bugs if you don’t realize it’s happening, so it’s something you have to be extra keen on.
+
+### **Vector types: The players in the team**
+
+Vectors come in different types, just like baseball players have different positions. Here are the main types :
+
+-   Numeric: Regular numbers like `c(1, 2.5, 3)`
+
+-   Integer: Whole numbers like `c(1L, 2L, 3L)`
+
+-   Character: Text like `c("Pitcher", "Catcher")`
+
+-   Logical: is_home_team \<- c(TRUE, FALSE, TRUE)
+
+-   Complex and Raw stores complex numbers which include a real and an imaginary part (e.g., `2 + 3i`). Imagine you’re modeling a pitch’s movement: the horizontal (x-axis) movement is the real part, and the vertical (y-axis) movement is the imaginary part. A complex number `3 + 2i` might represent a fastball with 3 units of horizontal movement and 2 units of rise. This gives you a compact way of describing a two-dimensional pitch path.
+
+### **What can you do with vectors?**
+
+This is where vectors start to feel really powerful. You can do all sorts of operations on them and R handles it in a smart way.
+
+1.  Accessing individual elements
+
+```{r}
+players[1]
+#Casper
+
+runs_scored[2]
+#3
+```
+
+2\. Slicing: Getting multiple elements
+
+```{r}
+players[2:4]
+# "Moses" "Tuju" "Karani"
+
+```
+
+3\. Filtering using conditions
+
+```{r}
+runs_scored[runs_scored > 2]
+# 3 4
+```
+
+4\. Doing arthmetic operation
+
+```{r}
+runs_scored <- c(2, 3, 2, 1, 4)
+runs_scored * 2
+# [1] 4 6 4 2 8
+```
+
+5\. Getting summary statistics
+
+```{r}
+
+sum(runs_scored)   # total runs
+mean(runs_scored)  # average runs
+max(runs_scored)   # highest runs
+
+```
+
+6\. Find the top performer based on runs scored in that game
+
+```{r}
+players[which.max(runs_scored)]
+# "Steve"
+```
+
+### **Game scenario: game summary**
+
+Below I have player names and the number of runs each scored in game 8 of the regular season match
+
+```{r}
+
+players <- c("Casper", "Moses", "Tuju", "Karani", "Steve")
+runs_scored <- c(2, 3, 2, 1, 4)
+
+```
+
+Using this data I can calculate the following:
+
+-   Find the total team runs: *`sum(runs)`*
+
+-   Calculate the average runs per player: *`mean(runs_scored)`*
+
+-   See who scored no runs: players: *players\[runs_scored == 0\]*
+
+-   Find the MVP based on runs scored: *players\[which.max(runs_scored)\]*
+
+### **Inning pointers**
+
+Vectors are everywhere in R and if you get comfortable with them, everything else gets easier. It’s important to pay attention to types. Mixing types inside a vector can mess things up and it’s worth noting that R is really good at handling operations on entire vectors.
+
+### **What’s next?**
+
+As we’ve seen, vectors are the lead-off hitters of R setting the pace, laying the foundation, and always getting on base when it comes to data manipulation. Whether you’re dealing with game scores, player stats, or league standings, understanding how to create and manipulate vectors is a crucial skill.
+
+In our next innings, we’ll dive deeper into how vectors interact with data frames and how to use them in analyzing real baseball data from the Thika Rangers Baseball club game stats.
+
+And with that, I’ll step behind the plate and make the call:
+
+### **That’s the ball game! From Dugout to Data**

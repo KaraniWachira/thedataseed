@@ -1,0 +1,28 @@
+---
+title: "About Me" 
+image: my-image.jpg
+about:
+  template: trestles
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://x.com/mrAfricanSeed
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/keith-karani-3794041a4/
+    - icon: github
+      text: Github
+      href: https://github.com/KaraniWachira
+---
+
+## **Hello! It's nice to meet you**
+
+I’m Keith Karani Wachira, a data scientist at WeCan Farm, and agribusiness venture and R enthusiast who’s driven by the love of digging into the root causes behind patterns in data, then using R to turn those insights into practical improvements.
+
+I serve as Partnerships Lead for the DeKUT R Community, helping connect students, organizations, and the global R ecosystem. I also play baseball and analyze my team’s stats to guide batting order and strategy always asking how we can grow and play smarter.
+
+::: {.callout-important icon="false"}
+## Featured in
+
+[Leading the Dekut R Community in Kenya and Innovating with R](https://r-consortium.org/posts/keith-karani-wachira-leading-the-dekut-r-community-in-kenya-and-innovating-with-r/)
+:::

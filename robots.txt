@@ -1,1 +1,1 @@
-Sitemap: https://keithkarani.tech/sitemap.xml
+Sitemap: http://keithkarani.tech/sitemap.xml

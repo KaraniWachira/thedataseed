@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 58c6804b-8f4a-4c01-9bca-a35731ee2e0c
+      url: https://keithkarani.quarto.pub/thedataseed

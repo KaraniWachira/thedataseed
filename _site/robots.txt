@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://58c6804b-8f4a-4c01-9bca-a35731ee2e0c.netlify.app/sitemap.xml

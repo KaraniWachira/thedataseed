@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Keith Karani"
-  site-url: "keithkarani.tech"
+  site-url: ""
   navbar:
     right:
       - about.qmd

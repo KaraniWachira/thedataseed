@@ -17,7 +17,7 @@ about:
 
 ## **Hello! It's nice to meet you**
 
-I’m Keith Karani Wachira, a data scientist at WeCan Farm, and agribusiness venture and R enthusiast who’s driven by the love of digging into the root causes behind patterns in data, then using R to turn those insights into practical improvements.
+I’m Keith Karani Wachira, a data scientist at WeCan Farm, an agribusiness venture who’s driven by the love of exploring patterns in data, then using R to turn those insights into practical improvements.
 
 I serve as Partnerships Lead for the DeKUT R Community, helping connect students, organizations, and the global R ecosystem. I also play baseball and analyze my team’s stats to guide batting order and strategy always asking how we can grow and play smarter.
 
